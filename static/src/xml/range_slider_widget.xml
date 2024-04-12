@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates id="template" xml:space="preserve">
+    <t t-name="ProgressBarWidget">
+        <div>
+            <div id="slider">
+                <input id="slid_bar" type="range" min="0"
+                      max="100"
+                       t-on-input = "_sliderinput"
+                       class="inputSlider"
+                       t-ref="inputSlider"
+                />
+                <input id="rangeValue" class="rangeValue" t-ref="sliderValue"/>
+           </div>
+        </div>
+    </t>
+</templates>
